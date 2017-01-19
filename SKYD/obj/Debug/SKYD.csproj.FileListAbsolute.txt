@@ -1,0 +1,12 @@
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\bin\Debug\SKYD.exe.config
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\bin\Debug\SKYD.exe
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\bin\Debug\SKYD.pdb
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.Form1.resources
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.Properties.Resources.resources
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.exe
+c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.pdb
+C:\Users\User\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.OpenEntry.resources
+C:\Users\User\documents\visual studio 2013\Projects\SKYD\SKYD\bin\Debug\DataBase\skyd.mdf
+C:\Users\User\documents\visual studio 2013\Projects\SKYD\SKYD\bin\Debug\DataBase\skyd_log.ldf
