@@ -11,6 +11,7 @@
     <AssemblyName>SKYD</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -61,20 +61,28 @@
   <ItemGroup>
     <Compile Include="Classes\CheckingTurnstile.cs" />
     <Compile Include="Classes\ExportTheDatabase.cs" />
+    <Compile Include="Classes\GETrequests.cs" />
     <Compile Include="Classes\ImportfromDatabase.cs" />
+    <Compile Include="Classes\POSTrequests.cs" />
     <Compile Include="Classes\SQL\BDClass.cs" />
     <Compile Include="Classes\SQL\SQLClass.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="OpenEntry.cs">
+    <Compile Include="Forms\OpenEntry.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OpenEntry.Designer.cs">
+    <Compile Include="Forms\OpenEntry.Designer.cs">
       <DependentUpon>OpenEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\update_turnstiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\update_turnstiles.Designer.cs">
+      <DependentUpon>update_turnstiles.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,11 +91,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>skydDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Forms\turnstiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\turnstiles.Designer.cs">
+      <DependentUpon>turnstiles.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OpenEntry.resx">
+    <EmbeddedResource Include="Forms\OpenEntry.resx">
       <DependentUpon>OpenEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\update_turnstiles.resx">
+      <DependentUpon>update_turnstiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +115,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\turnstiles.resx">
+      <DependentUpon>turnstiles.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,12 +160,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\skyd.mdf">
+    <Content Include="skyd.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DataBase\skyd_log.ldf">
+    <Content Include="skyd_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>skyd.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

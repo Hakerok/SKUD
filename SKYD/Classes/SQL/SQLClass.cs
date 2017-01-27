@@ -7,10 +7,10 @@ namespace SKYD.Classes.SQL
 {
     internal class SqlClass
     {
-        public SqlConnection SqlCon =
-            new SqlConnection(
-                @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\User\documents\visual studio 2013\Projects\SKYD\SKYD\DataBase\skyd.mdf;Integrated Security=True");
-
+       public SqlConnection SqlCon = new SqlConnection(
+                @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\skyd.mdf;Integrated Security=True");
+     
+       
         public void Combobox(ComboBox unitcb, ComboBox dormcb)
         {
             unitcb.Items.Add(@"Подразделения");

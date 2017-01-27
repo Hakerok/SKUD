@@ -10,3 +10,17 @@ c:\users\user\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.pdb
 C:\Users\User\documents\visual studio 2013\Projects\SKYD\SKYD\obj\Debug\SKYD.OpenEntry.resources
 C:\Users\User\documents\visual studio 2013\Projects\SKYD\SKYD\bin\Debug\DataBase\skyd.mdf
 C:\Users\User\documents\visual studio 2013\Projects\SKYD\SKYD\bin\Debug\DataBase\skyd_log.ldf
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\bin\Debug\SKYD.exe.config
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.exe
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.pdb
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\bin\Debug\SKYD.exe
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\bin\Debug\SKYD.pdb
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.csprojResolveAssemblyReference.cache
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.Form1.resources
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.OpenEntry.resources
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.Properties.Resources.resources
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.csproj.GenerateResource.Cache
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\bin\Debug\skyd.mdf
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\bin\Debug\skyd_log.ldf
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.turnstiles.resources
+C:\Users\Игорь\Documents\GitHub\SKUD\SKYD\obj\Debug\SKYD.Forms.update_turnstiles.resources
