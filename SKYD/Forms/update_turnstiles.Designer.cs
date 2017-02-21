@@ -30,12 +30,12 @@
         {
             this.Add = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
-            this.name = new System.Windows.Forms.TextBox();
+            this.nameturn = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.local = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ip = new System.Windows.Forms.TextBox();
+            this.ipadress = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Add
@@ -58,12 +58,12 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // name
+            // nameturn
             // 
-            this.name.Location = new System.Drawing.Point(13, 25);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(283, 20);
-            this.name.TabIndex = 2;
+            this.nameturn.Location = new System.Drawing.Point(13, 25);
+            this.nameturn.Name = "nameturn";
+            this.nameturn.Size = new System.Drawing.Size(283, 20);
+            this.nameturn.TabIndex = 2;
             // 
             // label1
             // 
@@ -99,12 +99,16 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Ip_адрес";
             // 
-            // ip
+            // ipadress
             // 
-            this.ip.Location = new System.Drawing.Point(13, 103);
-            this.ip.Name = "ip";
-            this.ip.Size = new System.Drawing.Size(283, 20);
-            this.ip.TabIndex = 6;
+            this.ipadress.Location = new System.Drawing.Point(13, 103);
+            this.ipadress.Name = "ipadress";
+            this.ipadress.Size = new System.Drawing.Size(283, 20);
+            this.ipadress.TabIndex = 6;
+            this.ipadress.Text = "...";
+            this.ipadress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ipadress_KeyDown);
+            this.ipadress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ipadress_KeyPress);
+            this.ipadress.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ipadress_KeyUp);
             // 
             // update_turnstiles
             // 
@@ -112,11 +116,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(308, 158);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.ip);
+            this.Controls.Add(this.ipadress);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.local);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.nameturn);
             this.Controls.Add(this.back);
             this.Controls.Add(this.Add);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -131,11 +135,11 @@
 
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button back;
-        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.TextBox nameturn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox local;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox ip;
+        private System.Windows.Forms.TextBox ipadress;
     }
 }

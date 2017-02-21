@@ -1,28 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Windows.Forms;
 using SKYD.Classes.SQL;
-using System.Data.SqlClient;
-using SKYD.Forms;
 
-namespace SKYD
+namespace SKYD.Forms
 {
-    public partial class turnstiles : Form
+    public partial class Turnstiles : Form
     {
-        SqlClass sqlclass = new SqlClass();
-        public turnstiles()
+        private void turnstiles_Load(object sender, EventArgs e)
+        {
+          
+           
+        }
+        public Turnstiles()
         {
             InitializeComponent();
             Form1 main = new Form1();
             main.Hide();
             Table(dg);
-            
+
         }
 
         private void add_Click(object sender, EventArgs e)
@@ -30,62 +27,83 @@ namespace SKYD
             update_turnstiles uptturn = new update_turnstiles();
             uptturn.ShowDialog();
             Update();
-            
+            dg.Rows.Clear();
+            Table(dg);
+
         }
 
         private void edit_Click(object sender, EventArgs e)
         {
-
+            if (dg.CurrentRow != null)
+            {
+                string ippole = dg[0, dg.CurrentRow.Index].Value.ToString();
+                string name = dg[1, dg.CurrentRow.Index].Value.ToString();
+                string local = dg[2, dg.CurrentRow.Index].Value.ToString();
+                string ip = dg[3, dg.CurrentRow.Index].Value.ToString();
+                update_turnstiles uptturn =new update_turnstiles(name,local,ip,ippole);
+                uptturn.ShowDialog();
+            }
+            Update();
+            dg.Rows.Clear();
+            Table(dg);
         }
 
-        private void delete_Click(object sender, EventArgs e)
+        private async void delete_Click(object sender, EventArgs e)
         {
-            
+            if (MessageBox.Show(@"Вы действительно хотите удалить запись?", @"Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                SqlClass sqlclass = new SqlClass();
+                await sqlclass.SqlCon.OpenAsync();
+                try
+                {
+                    SqlCommand sqlcomdell = new SqlCommand("DELETE FROM [turnstiles] WHERE Id_turnstiles = @ID", sqlclass.SqlCon);
+                    Debug.Assert(dg.CurrentRow != null, string.Format("{0}", @"dg.CurrentRow != null"));
+                    sqlcomdell.Parameters.AddWithValue("@ID", dg[0, dg.CurrentRow.Index].Value.ToString());
+                    await sqlcomdell.ExecuteNonQueryAsync();
+                }
+                catch (Exception exp)
+                {
+                    MessageBox.Show(exp.Message, exp.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    sqlclass.SqlCon.Close();
+                    dg.Rows.Clear();
+                    Table(dg);
+                }
+            }
         }
-
         private void exit_Click(object sender, EventArgs e)
         {
             Close();
         }
-
-        public void Table(DataGridView datagrid)
+        public async void Table(DataGridView datagrid)
+        {
+            SqlClass sqlclass = new SqlClass();
+            await sqlclass.SqlCon.OpenAsync();
+            SqlDataReader sqlReader = null;
+            SqlCommand sqlcomturn = new SqlCommand("SELECT * FROM [turnstiles]", sqlclass.SqlCon);
+            try
             {
-                SqlClass sqlclass = new SqlClass();
-                const string sqlDb = @"SELECT * FROM dbo.turnstiles";
-                var sqlDa = new SqlDataAdapter(sqlDb, sqlclass.SqlCon);
-                var dtMain = new DataTable();
-                try
+                sqlReader = await sqlcomturn.ExecuteReaderAsync();
+                while (await sqlReader.ReadAsync())
                 {
-                    sqlDa.Fill(dtMain);
+                    datagrid.Rows.Add(sqlReader["Id_turnstiles"], sqlReader["name_turnstiles"], sqlReader["location"], sqlReader["ip_adress"], sqlReader["statys"]);
                 }
-                catch (Exception exp)
-                {
-                    MessageBox.Show(exp.Message);
-                }
-                for (var i = 0; i < dtMain.Rows.Count; i++)
-                {
-                    var temp = new BdClass.turnstiles
-                    {
-                        Id = (int)dtMain.Rows[i]["Id_turnstiles"],
-                        Name = dtMain.Rows[i]["name_turnstiles"].ToString(),
-                        Location = dtMain.Rows[i]["location"].ToString(),
-                        Ip_adress = dtMain.Rows[i]["ip_adress"].ToString(),
-                        statys = Convert.ToInt32(dtMain.Rows[i]["statys"].ToString()),
-
-                    };
-                    if (0 == temp.statys )
-                    {
-                        datagrid.Rows.Add(temp.Id, temp.Name, temp.Location, temp.Ip_adress, @"Не в сети");
-                    }
-                    else
-                    {
-                        datagrid.Rows.Add(temp.Id, temp.Name, temp.Location, temp.Ip_adress, @"В сети");
-                    }
-                   
-                }
-                
             }
-        
-           
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message, exp.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (sqlReader != null)
+                {
+                    sqlReader.Close();
+                }
+            }
+        }
+
+       
     }
 }

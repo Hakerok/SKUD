@@ -35,7 +35,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>2</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IPAddressControlLib">
+      <HintPath>.\IPAddressControlLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,8 +67,25 @@
     <Compile Include="Classes\GETrequests.cs" />
     <Compile Include="Classes\ImportfromDatabase.cs" />
     <Compile Include="Classes\POSTrequests.cs" />
-    <Compile Include="Classes\SQL\BDClass.cs" />
     <Compile Include="Classes\SQL\SQLClass.cs" />
+    <Compile Include="Forms\authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\authorization.Designer.cs">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Authorizationadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Authorizationadd.Designer.cs">
+      <DependentUpon>Authorizationadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Authorizationdatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Authorizationdatabase.Designer.cs">
+      <DependentUpon>Authorizationdatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +97,12 @@
     </Compile>
     <Compile Include="Forms\OpenEntry.Designer.cs">
       <DependentUpon>OpenEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\reference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\reference.Designer.cs">
+      <DependentUpon>reference.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\update_turnstiles.cs">
       <SubType>Form</SubType>
@@ -97,11 +123,23 @@
     <Compile Include="Forms\turnstiles.Designer.cs">
       <DependentUpon>turnstiles.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\authorization.resx">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Authorizationadd.resx">
+      <DependentUpon>Authorizationadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Authorizationdatabase.resx">
+      <DependentUpon>Authorizationdatabase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OpenEntry.resx">
       <DependentUpon>OpenEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\reference.resx">
+      <DependentUpon>reference.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\update_turnstiles.resx">
       <DependentUpon>update_turnstiles.cs</DependentUpon>

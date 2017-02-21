@@ -1,6 +1,6 @@
-﻿namespace SKYD
+﻿namespace SKYD.Forms
 {
-    partial class turnstiles
+    partial class Turnstiles
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dg = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.add = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.skydDataSet = new SKYD.skydDataSet();
             this.skydDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.edit = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.update = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skydDataSet)).BeginInit();
@@ -63,56 +63,6 @@
             this.dg.ReadOnly = true;
             this.dg.Size = new System.Drawing.Size(550, 324);
             this.dg.TabIndex = 0;
-            // 
-            // add
-            // 
-            this.add.Location = new System.Drawing.Point(13, 344);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 23);
-            this.add.TabIndex = 1;
-            this.add.Text = "Добавить";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.add_Click);
-            // 
-            // exit
-            // 
-            this.exit.Location = new System.Drawing.Point(479, 344);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(75, 23);
-            this.exit.TabIndex = 2;
-            this.exit.Text = "Закрыть";
-            this.exit.UseVisualStyleBackColor = true;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // skydDataSet
-            // 
-            this.skydDataSet.DataSetName = "skydDataSet";
-            this.skydDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // skydDataSetBindingSource
-            // 
-            this.skydDataSetBindingSource.DataSource = this.skydDataSet;
-            this.skydDataSetBindingSource.Position = 0;
-            // 
-            // edit
-            // 
-            this.edit.Location = new System.Drawing.Point(94, 344);
-            this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(100, 23);
-            this.edit.TabIndex = 3;
-            this.edit.Text = "Редактировать";
-            this.edit.UseVisualStyleBackColor = true;
-            this.edit.Click += new System.EventHandler(this.edit_Click);
-            // 
-            // delete
-            // 
-            this.delete.Location = new System.Drawing.Point(200, 344);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 23);
-            this.delete.TabIndex = 4;
-            this.delete.Text = "Удалить";
-            this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // Column1
             // 
@@ -144,16 +94,66 @@
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
+            // add
+            // 
+            this.add.Location = new System.Drawing.Point(13, 344);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.TabIndex = 0;
+            this.add.Text = "Добавить";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
+            // 
+            // exit
+            // 
+            this.exit.Location = new System.Drawing.Point(479, 344);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(75, 23);
+            this.exit.TabIndex = 4;
+            this.exit.Text = "Закрыть";
+            this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
+            // skydDataSet
+            // 
+            this.skydDataSet.DataSetName = "skydDataSet";
+            this.skydDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // skydDataSetBindingSource
+            // 
+            this.skydDataSetBindingSource.DataSource = this.skydDataSet;
+            this.skydDataSetBindingSource.Position = 0;
+            // 
+            // edit
+            // 
+            this.edit.Location = new System.Drawing.Point(94, 344);
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(100, 23);
+            this.edit.TabIndex = 1;
+            this.edit.Text = "Редактировать";
+            this.edit.UseVisualStyleBackColor = true;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
+            // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(200, 344);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 2;
+            this.delete.Text = "Удалить";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
             // update
             // 
             this.update.Location = new System.Drawing.Point(362, 344);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(111, 23);
-            this.update.TabIndex = 5;
+            this.update.TabIndex = 3;
             this.update.Text = "Обновить данные";
             this.update.UseVisualStyleBackColor = true;
             // 
-            // turnstiles
+            // Turnstiles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,8 +164,9 @@
             this.Controls.Add(this.exit);
             this.Controls.Add(this.add);
             this.Controls.Add(this.dg);
-            this.Name = "turnstiles";
+            this.Name = "Turnstiles";
             this.Text = "Турникеты";
+            this.Load += new System.EventHandler(this.turnstiles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skydDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skydDataSetBindingSource)).EndInit();

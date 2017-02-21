@@ -1,4 +1,4 @@
-﻿namespace SKYD
+﻿namespace SKYD.Forms
 {
     partial class OpenEntry
     {
@@ -29,13 +29,22 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -64,11 +73,37 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
             this.dataGridView1.Location = new System.Drawing.Point(12, 293);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(453, 141);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Дата выдачи";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Номер пропуска";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Дата блокирования";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // label1
             // 
@@ -84,7 +119,7 @@
             this.button1.Location = new System.Drawing.Point(471, 351);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Заблокировать абонента";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -93,7 +128,7 @@
             this.button2.Location = new System.Drawing.Point(471, 380);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 24);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Новый пропуск";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -102,7 +137,7 @@
             this.button3.Location = new System.Drawing.Point(471, 322);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 23);
-            this.button3.TabIndex = 4;
+            this.button3.TabIndex = 5;
             this.button3.Text = "Обновить права доступа";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -111,37 +146,99 @@
             this.button4.Location = new System.Drawing.Point(471, 410);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 23);
-            this.button4.TabIndex = 5;
+            this.button4.TabIndex = 8;
             this.button4.Text = "Выход без сохранения";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkedListBox1);
-            this.groupBox1.Location = new System.Drawing.Point(334, 134);
+            this.groupBox1.Controls.Add(this.checkBox7);
+            this.groupBox1.Controls.Add(this.checkBox6);
+            this.groupBox1.Controls.Add(this.checkBox5);
+            this.groupBox1.Controls.Add(this.checkBox4);
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Location = new System.Drawing.Point(334, 109);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(287, 151);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.Size = new System.Drawing.Size(287, 176);
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Права доступа";
             // 
-            // checkedListBox1
+            // checkBox7
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Главный корпус",
-            "Морфологический корпус",
-            "Санитарно-гигиенический корпус",
-            "Фармацевтический корпус",
-            "Общежитие №1",
-            "Общежитие №2",
-            "Общежитие №3",
-            "Общежитие №4"});
-            this.checkedListBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(274, 124);
-            this.checkedListBox1.TabIndex = 0;
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(6, 155);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(80, 17);
+            this.checkBox7.TabIndex = 5;
+            this.checkBox7.Text = "checkBox7";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(6, 134);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(80, 17);
+            this.checkBox6.TabIndex = 4;
+            this.checkBox6.Text = "checkBox6";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(6, 111);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(80, 17);
+            this.checkBox5.TabIndex = 6;
+            this.checkBox5.Text = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(6, 88);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(80, 17);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(6, 65);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(80, 17);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 42);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(80, 17);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -162,7 +259,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 13);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(291, 207);
-            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Редактировать данные";
             // 
@@ -172,7 +269,7 @@
             this.comboBox3.Location = new System.Drawing.Point(147, 121);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(125, 21);
-            this.comboBox3.TabIndex = 37;
+            this.comboBox3.TabIndex = 4;
             // 
             // comboBox2
             // 
@@ -180,7 +277,7 @@
             this.comboBox2.Location = new System.Drawing.Point(147, 96);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(125, 21);
-            this.comboBox2.TabIndex = 36;
+            this.comboBox2.TabIndex = 3;
             // 
             // comboBox1
             // 
@@ -188,35 +285,36 @@
             this.comboBox1.Location = new System.Drawing.Point(147, 173);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(125, 21);
-            this.comboBox1.TabIndex = 35;
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(147, 16);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(125, 20);
-            this.textBox6.TabIndex = 34;
+            this.textBox6.TabIndex = 0;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(147, 43);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(125, 20);
-            this.textBox5.TabIndex = 33;
+            this.textBox5.TabIndex = 1;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(147, 69);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(125, 20);
-            this.textBox4.TabIndex = 32;
+            this.textBox4.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(147, 147);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(125, 20);
-            this.dateTimePicker1.TabIndex = 30;
+            this.dateTimePicker1.TabIndex = 5;
             // 
             // label8
             // 
@@ -286,7 +384,7 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(489, 79);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(125, 20);
-            this.dateTimePicker2.TabIndex = 32;
+            this.dateTimePicker2.TabIndex = 2;
             // 
             // label9
             // 
@@ -302,7 +400,7 @@
             this.button5.Location = new System.Drawing.Point(471, 293);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(150, 23);
-            this.button5.TabIndex = 33;
+            this.button5.TabIndex = 4;
             this.button5.Text = "Обновить данные";
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -329,7 +427,8 @@
             this.textBox7.Location = new System.Drawing.Point(413, 56);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(201, 20);
-            this.textBox7.TabIndex = 36;
+            this.textBox7.TabIndex = 1;
+            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
             // OpenEntry
             // 
@@ -351,10 +450,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "OpenEntry";
-            this.Text = "OpenEntry";
+            this.Text = "Добавление ";
             this.Load += new System.EventHandler(this.OpenEntry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -371,7 +471,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
@@ -393,5 +492,15 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
