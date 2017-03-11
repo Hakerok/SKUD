@@ -1,41 +1,35 @@
 ﻿using SKYD.Classes.SQL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 
 namespace SKYD.Forms
 {
-    public partial class update_turnstiles : Form
+    public partial class UpdateTurnstiles : MetroForm
     {
-        private string idupdate;
-        private string nameupdate;
-        private string localupdate;
-        private string ipupdate;
-        public update_turnstiles()
+        private readonly string _idupdate;
+        private readonly string _nameupdate;
+        private readonly string _localupdate;
+        private readonly string _ipupdate;
+        public UpdateTurnstiles()
         {
             InitializeComponent();
            
         }
-        public update_turnstiles(string name, string localturn, string apdate, string id)
+        public UpdateTurnstiles(string name, string localturn, string apdate, string id)
         {
             InitializeComponent();
-            Add.Text = "Изменить";
+            Add.Text = @"Изменить";
             nameturn.Text = name;
             local.Text = localturn;
             ipadress.Text = apdate;
-            idupdate = id;
-            nameupdate = name;
-            localupdate = localturn;
-            ipupdate = apdate;
+            _idupdate = id;
+            _nameupdate = name;
+            _localupdate = localturn;
+            _ipupdate = apdate;
+            Text = @"Редактирование записи";
 
         }
         private  void back_Click(object sender, EventArgs e)
@@ -44,7 +38,7 @@ namespace SKYD.Forms
             {
                 if (MessageBox.Show(@"Сохранить значения?", @"Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    Add_Click(null, null);
+                    Add_Click();
                 }
                 else
                 {
@@ -59,7 +53,7 @@ namespace SKYD.Forms
         }
         private async void Add_Click(object sender, EventArgs e)
         {
-            if (idupdate == null)
+            if (_idupdate == null)
             {
                 SqlClass sqlclass = new SqlClass();
                 await sqlclass.SqlCon.OpenAsync();
@@ -79,7 +73,7 @@ namespace SKYD.Forms
                     }
                     catch (Exception exp)
                     {
-                        MessageBox.Show(exp.Message.ToString(), exp.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(exp.Message, exp.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     finally
                     {
@@ -94,7 +88,7 @@ namespace SKYD.Forms
             }
             else
             {
-                if (nameturn.Text == nameupdate && local.Text == localupdate && ipadress.Text == ipupdate)
+                if (nameturn.Text == _nameupdate && local.Text == _localupdate && ipadress.Text == _ipupdate)
                 {
                   if( MessageBox.Show(@"Данная запись не была отредактированна закрыть без изменения?", @"Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes)
                   {
@@ -112,7 +106,7 @@ namespace SKYD.Forms
                             try
                             {
                                 SqlCommand sqlcoupdate = new SqlCommand("UPDATE [turnstiles] SET [name_turnstiles] = @newname, [location] = @newlocal, [ip_adress] =@newipad , [statys] = @newstatys WHERE [Id_turnstiles] = @ID", sqlclass.SqlCon);
-                                sqlcoupdate.Parameters.AddWithValue("@ID", idupdate);
+                                sqlcoupdate.Parameters.AddWithValue("@ID", _idupdate);
                                 sqlcoupdate.Parameters.AddWithValue("@newname", nameturn.Text);
                                 sqlcoupdate.Parameters.AddWithValue("@newlocal", local.Text);
                                 sqlcoupdate.Parameters.AddWithValue("@newipad", ipadress.Text);
@@ -124,7 +118,7 @@ namespace SKYD.Forms
                             }
                             catch (Exception exp)
                             {
-                                MessageBox.Show(exp.Message.ToString(), exp.Source.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(exp.Message, exp.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                             finally
                             {
@@ -141,20 +135,12 @@ namespace SKYD.Forms
 
             }
         }
-        private void ipadress_KeyDown(object sender, KeyEventArgs e)
-        {
-            Console.WriteLine("KeyDown: {0}", e.KeyValue);
-        }
 
-        private void ipadress_KeyPress(object sender, KeyPressEventArgs e)
+        private void Add_Click()
         {
-            Console.WriteLine("KeyPress: {0}", Convert.ToInt32(e.KeyChar));
-        }
 
-        private void ipadress_KeyUp(object sender, KeyEventArgs e)
-        {
-            Console.WriteLine("KeyUp: {0}", e.KeyValue);
         }
+      
     }
 }
 

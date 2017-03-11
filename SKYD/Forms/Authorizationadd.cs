@@ -2,10 +2,11 @@
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using SKYD.Classes.SQL;
+using MetroFramework.Forms;
 
 namespace SKYD.Forms
 {
-    public partial class Authorizationadd : Form
+    public partial class Authorizationadd : MetroForm
     {
         private readonly string _nameuser;
         private readonly string _passw;
@@ -23,6 +24,7 @@ namespace SKYD.Forms
             button1.Text = @"Изменить";
             _nameuser = name;
             _passw = passwords;
+
         }
 
         private async void button1_Click(object sender, EventArgs e)

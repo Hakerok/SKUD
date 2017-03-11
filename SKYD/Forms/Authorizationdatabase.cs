@@ -3,10 +3,11 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Windows.Forms;
 using SKYD.Classes.SQL;
+using MetroFramework.Forms;
 
 namespace SKYD.Forms
 {
-    public partial class Authorizationdatabase : Form
+    public partial class Authorizationdatabase : MetroForm
     {
         public Authorizationdatabase()
         {

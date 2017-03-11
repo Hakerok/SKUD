@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace SKYD.Forms
 {
-    public partial class reference : Form
+    public partial class reference :MetroForm
     {
         public reference()
         {

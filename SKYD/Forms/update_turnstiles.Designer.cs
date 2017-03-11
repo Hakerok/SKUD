@@ -1,6 +1,6 @@
 ﻿namespace SKYD.Forms
 {
-    partial class update_turnstiles
+    partial class UpdateTurnstiles
     {
         /// <summary>
         /// Required designer variable.
@@ -28,103 +28,169 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Add = new System.Windows.Forms.Button();
-            this.back = new System.Windows.Forms.Button();
-            this.nameturn = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.local = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ipadress = new System.Windows.Forms.TextBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.nameturn = new MetroFramework.Controls.MetroTextBox();
+            this.local = new MetroFramework.Controls.MetroTextBox();
+            this.ipadress = new MetroFramework.Controls.MetroTextBox();
+            this.Add = new MetroFramework.Controls.MetroButton();
+            this.back = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(24, 55);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(99, 19);
+            this.metroLabel1.TabIndex = 8;
+            this.metroLabel1.Text = "Имя турникета";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(24, 103);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(117, 19);
+            this.metroLabel2.TabIndex = 9;
+            this.metroLabel2.Text = "Местоположение";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(24, 151);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel3.TabIndex = 10;
+            this.metroLabel3.Text = "Ip_адрес";
+            // 
+            // nameturn
+            // 
+            // 
+            // 
+            // 
+            this.nameturn.CustomButton.Image = null;
+            this.nameturn.CustomButton.Location = new System.Drawing.Point(260, 1);
+            this.nameturn.CustomButton.Name = "";
+            this.nameturn.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.nameturn.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.nameturn.CustomButton.TabIndex = 1;
+            this.nameturn.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.nameturn.CustomButton.UseSelectable = true;
+            this.nameturn.CustomButton.Visible = false;
+            this.nameturn.Lines = new string[0];
+            this.nameturn.Location = new System.Drawing.Point(24, 77);
+            this.nameturn.MaxLength = 32767;
+            this.nameturn.Name = "nameturn";
+            this.nameturn.PasswordChar = '\0';
+            this.nameturn.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.nameturn.SelectedText = "";
+            this.nameturn.SelectionLength = 0;
+            this.nameturn.SelectionStart = 0;
+            this.nameturn.ShortcutsEnabled = true;
+            this.nameturn.Size = new System.Drawing.Size(282, 23);
+            this.nameturn.TabIndex = 11;
+            this.nameturn.UseSelectable = true;
+            this.nameturn.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.nameturn.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // local
+            // 
+            // 
+            // 
+            // 
+            this.local.CustomButton.Image = null;
+            this.local.CustomButton.Location = new System.Drawing.Point(260, 1);
+            this.local.CustomButton.Name = "";
+            this.local.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.local.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.local.CustomButton.TabIndex = 1;
+            this.local.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.local.CustomButton.UseSelectable = true;
+            this.local.CustomButton.Visible = false;
+            this.local.Lines = new string[0];
+            this.local.Location = new System.Drawing.Point(23, 125);
+            this.local.MaxLength = 32767;
+            this.local.Name = "local";
+            this.local.PasswordChar = '\0';
+            this.local.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.local.SelectedText = "";
+            this.local.SelectionLength = 0;
+            this.local.SelectionStart = 0;
+            this.local.ShortcutsEnabled = true;
+            this.local.Size = new System.Drawing.Size(282, 23);
+            this.local.TabIndex = 12;
+            this.local.UseSelectable = true;
+            this.local.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.local.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // ipadress
+            // 
+            // 
+            // 
+            // 
+            this.ipadress.CustomButton.Image = null;
+            this.ipadress.CustomButton.Location = new System.Drawing.Point(260, 1);
+            this.ipadress.CustomButton.Name = "";
+            this.ipadress.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.ipadress.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.ipadress.CustomButton.TabIndex = 1;
+            this.ipadress.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.ipadress.CustomButton.UseSelectable = true;
+            this.ipadress.CustomButton.Visible = false;
+            this.ipadress.Lines = new string[0];
+            this.ipadress.Location = new System.Drawing.Point(23, 173);
+            this.ipadress.MaxLength = 32767;
+            this.ipadress.Name = "ipadress";
+            this.ipadress.PasswordChar = '\0';
+            this.ipadress.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.ipadress.SelectedText = "";
+            this.ipadress.SelectionLength = 0;
+            this.ipadress.SelectionStart = 0;
+            this.ipadress.ShortcutsEnabled = true;
+            this.ipadress.Size = new System.Drawing.Size(282, 23);
+            this.ipadress.TabIndex = 13;
+            this.ipadress.UseSelectable = true;
+            this.ipadress.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.ipadress.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(12, 129);
+            this.Add.Location = new System.Drawing.Point(23, 203);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(136, 23);
-            this.Add.TabIndex = 0;
+            this.Add.Size = new System.Drawing.Size(111, 23);
+            this.Add.TabIndex = 14;
             this.Add.Text = "Добавить";
-            this.Add.UseVisualStyleBackColor = true;
+            this.Add.UseSelectable = true;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(164, 129);
+            this.back.Location = new System.Drawing.Point(194, 203);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(132, 23);
-            this.back.TabIndex = 1;
+            this.back.Size = new System.Drawing.Size(112, 23);
+            this.back.TabIndex = 15;
             this.back.Text = "Назад";
-            this.back.UseVisualStyleBackColor = true;
+            this.back.UseSelectable = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // nameturn
-            // 
-            this.nameturn.Location = new System.Drawing.Point(13, 25);
-            this.nameturn.Name = "nameturn";
-            this.nameturn.Size = new System.Drawing.Size(283, 20);
-            this.nameturn.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Имя турникета";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Местоположение";
-            // 
-            // local
-            // 
-            this.local.Location = new System.Drawing.Point(13, 64);
-            this.local.Name = "local";
-            this.local.Size = new System.Drawing.Size(283, 20);
-            this.local.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(113, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Ip_адрес";
-            // 
-            // ipadress
-            // 
-            this.ipadress.Location = new System.Drawing.Point(13, 103);
-            this.ipadress.Name = "ipadress";
-            this.ipadress.Size = new System.Drawing.Size(283, 20);
-            this.ipadress.TabIndex = 6;
-            this.ipadress.Text = "...";
-            this.ipadress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ipadress_KeyDown);
-            this.ipadress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ipadress_KeyPress);
-            this.ipadress.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ipadress_KeyUp);
-            // 
-            // update_turnstiles
+            // UpdateTurnstiles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 158);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.ipadress);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.local);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.nameturn);
+            this.ClientSize = new System.Drawing.Size(316, 288);
             this.Controls.Add(this.back);
             this.Controls.Add(this.Add);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "update_turnstiles";
+            this.Controls.Add(this.ipadress);
+            this.Controls.Add(this.local);
+            this.Controls.Add(this.nameturn);
+            this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.Name = "UpdateTurnstiles";
             this.Text = "Добавление турникета";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -133,13 +199,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Add;
-        private System.Windows.Forms.Button back;
-        private System.Windows.Forms.TextBox nameturn;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox local;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox ipadress;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroTextBox nameturn;
+        private MetroFramework.Controls.MetroTextBox local;
+        private MetroFramework.Controls.MetroTextBox ipadress;
+        private MetroFramework.Controls.MetroButton Add;
+        private MetroFramework.Controls.MetroButton back;
+
     }
 }

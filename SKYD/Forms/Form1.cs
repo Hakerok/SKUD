@@ -4,10 +4,10 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using SKYD.Classes.SQL;
 using System.Threading;
-
+using  MetroFramework.Forms;
 namespace SKYD.Forms
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {
        
       readonly SqlClass _sqlClass = new SqlClass();
@@ -39,16 +39,6 @@ namespace SKYD.Forms
                 Application.Exit();
             }
             
-        }
-
-      private void button6_Click(object sender, EventArgs e)
-        {
-            dorm.SelectedIndex = 0;
-            department.SelectedIndex = 0;
-            subdivision.Items.Clear();
-            courses.Items.Clear();
-            subdivision.Enabled = false;
-            courses.Enabled = false;
         }
 
       public void ComboBoxFilling()
@@ -97,7 +87,7 @@ namespace SKYD.Forms
 
       private void добавтьТуToolStripMenuItem_Click(object sender, EventArgs e)
       {
-          update_turnstiles updaturn = new update_turnstiles();
+          UpdateTurnstiles updaturn = new UpdateTurnstiles();
           updaturn.ShowDialog();
       }
 
@@ -140,11 +130,6 @@ namespace SKYD.Forms
       {
           var reference = new reference { Owner = this };
             reference.ShowDialog();
-      }
-
-      private void tabPage2_Click(object sender, EventArgs e)
-      {
-
       }
 
       private void просмотрДанныхToolStripMenuItem_Click(object sender, EventArgs e)
@@ -196,6 +181,22 @@ namespace SKYD.Forms
               Application.Exit();
           }
       }
+
+      private void courses_SelectedIndexChanged(object sender, EventArgs e)
+      {
+
+      }
+
+        private void SortReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void редакторСправочникаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Directory formDirectory = new Directory();
+            formDirectory.ShowDialog();
+        }
 
       
 

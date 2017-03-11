@@ -6,7 +6,7 @@ using SKYD.Classes.SQL;
 
 namespace SKYD.Forms
 {
-    public partial class Turnstiles : Form
+    public partial class Turnstiles : MetroFramework.Forms.MetroForm
     {
         private void turnstiles_Load(object sender, EventArgs e)
         {
@@ -24,7 +24,7 @@ namespace SKYD.Forms
 
         private void add_Click(object sender, EventArgs e)
         {
-            update_turnstiles uptturn = new update_turnstiles();
+            UpdateTurnstiles uptturn = new UpdateTurnstiles();
             uptturn.ShowDialog();
             Update();
             dg.Rows.Clear();
@@ -40,7 +40,7 @@ namespace SKYD.Forms
                 string name = dg[1, dg.CurrentRow.Index].Value.ToString();
                 string local = dg[2, dg.CurrentRow.Index].Value.ToString();
                 string ip = dg[3, dg.CurrentRow.Index].Value.ToString();
-                update_turnstiles uptturn =new update_turnstiles(name,local,ip,ippole);
+                UpdateTurnstiles uptturn =new UpdateTurnstiles(name,local,ip,ippole);
                 uptturn.ShowDialog();
             }
             Update();

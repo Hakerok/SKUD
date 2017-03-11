@@ -12,8 +12,8 @@ namespace SKYD.Classes.SQL
 
         public async void Combobox(ComboBox unitcb, ComboBox dormcb)
         {
-            unitcb.Items.Add(@"Подразделения");
-            dormcb.Items.Add(@"Номер общежития");
+            unitcb.Items.Add(@"Подразделение");
+            dormcb.Items.Add(@"Общежите");
             unitcb.SelectedIndex = 0;
             dormcb.SelectedIndex = 0;
             await SqlCon.OpenAsync();
@@ -60,6 +60,7 @@ namespace SKYD.Classes.SQL
             subdivisioncb.Items.Clear();
             if (unitcb.SelectedIndex == 1)
             {
+                subdivisioncb.Items.Add(@"Факультет");
                 if (SqlCon != null)
                 {
                     await SqlCon.OpenAsync();
@@ -72,6 +73,7 @@ namespace SKYD.Classes.SQL
                         {
                             subdivisioncb.Items.Add(sqlReader["name_faculties"]);
                         }
+                        subdivisioncb.SelectedIndex = 0;
                     }
                     catch (Exception exp)
                     {
@@ -88,6 +90,7 @@ namespace SKYD.Classes.SQL
             }
             if (unitcb.SelectedIndex == 3)
             {
+                subdivisioncb.Items.Add(@"Факультет");
                 if (SqlCon != null)
                 {
                     await SqlCon.OpenAsync();
@@ -100,6 +103,7 @@ namespace SKYD.Classes.SQL
                         {
                             subdivisioncb.Items.Add(sqlReader["name_fpps"]);
                         }
+                        subdivisioncb.SelectedIndex = 0;
                     }
                     catch (Exception exp)
                     {

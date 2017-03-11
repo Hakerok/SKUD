@@ -28,63 +28,280 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.Skip_number = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.checkBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBox2 = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBox3 = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBox4 = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBox5 = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBox6 = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBox7 = new MetroFramework.Controls.MetroCheckBox();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.tbname = new MetroFramework.Controls.MetroTextBox();
+            this.tbsurname = new MetroFramework.Controls.MetroTextBox();
+            this.tbmiddlename = new MetroFramework.Controls.MetroTextBox();
+            this.comboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.comboBox5 = new MetroFramework.Controls.MetroComboBox();
+            this.comboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
+            this.btadd_edit = new MetroFramework.Controls.MetroButton();
+            this.updatepermissions = new MetroFramework.Controls.MetroButton();
+            this.blocksubscriber = new MetroFramework.Controls.MetroButton();
+            this.newpass = new MetroFramework.Controls.MetroButton();
+            this.exit = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // groupBox1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.groupBox1.Controls.Add(this.checkBox7);
+            this.groupBox1.Controls.Add(this.checkBox6);
+            this.groupBox1.Controls.Add(this.checkBox5);
+            this.groupBox1.Controls.Add(this.checkBox4);
+            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 328);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(718, 81);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Права доступа";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.metroDateTime2);
+            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.tbmiddlename);
+            this.groupBox2.Controls.Add(this.tbsurname);
+            this.groupBox2.Controls.Add(this.tbname);
+            this.groupBox2.Controls.Add(this.metroLabel10);
+            this.groupBox2.Controls.Add(this.metroLabel9);
+            this.groupBox2.Controls.Add(this.metroLabel8);
+            this.groupBox2.Controls.Add(this.metroLabel7);
+            this.groupBox2.Controls.Add(this.metroLabel6);
+            this.groupBox2.Controls.Add(this.metroLabel5);
+            this.groupBox2.Controls.Add(this.metroLabel4);
+            this.groupBox2.Location = new System.Drawing.Point(12, 74);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(412, 248);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Редактировать данные";
+            // 
+            // metroDateTime1
+            // 
+            this.metroDateTime1.Location = new System.Drawing.Point(656, 111);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime1.Name = "metroDateTime1";
+            this.metroDateTime1.Size = new System.Drawing.Size(145, 29);
+            this.metroDateTime1.TabIndex = 36;
+            // 
+            // Skip_number
+            // 
+            // 
+            // 
+            // 
+            this.Skip_number.CustomButton.Image = null;
+            this.Skip_number.CustomButton.Location = new System.Drawing.Point(123, 1);
+            this.Skip_number.CustomButton.Name = "";
+            this.Skip_number.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Skip_number.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Skip_number.CustomButton.TabIndex = 1;
+            this.Skip_number.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Skip_number.CustomButton.UseSelectable = true;
+            this.Skip_number.CustomButton.Visible = false;
+            this.Skip_number.Lines = new string[0];
+            this.Skip_number.Location = new System.Drawing.Point(656, 82);
+            this.Skip_number.MaxLength = 32767;
+            this.Skip_number.Name = "Skip_number";
+            this.Skip_number.PasswordChar = '\0';
+            this.Skip_number.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Skip_number.SelectedText = "";
+            this.Skip_number.SelectionLength = 0;
+            this.Skip_number.SelectionStart = 0;
+            this.Skip_number.ShortcutsEnabled = true;
+            this.Skip_number.Size = new System.Drawing.Size(145, 23);
+            this.Skip_number.TabIndex = 37;
+            this.Skip_number.UseSelectable = true;
+            this.Skip_number.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Skip_number.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.Skip_number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Skip_number_KeyPress);
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(430, 117);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(220, 19);
+            this.metroLabel1.TabIndex = 38;
+            this.metroLabel1.Text = "Дата автоматической блокировки:";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(430, 90);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(206, 19);
+            this.metroLabel2.TabIndex = 39;
+            this.metroLabel2.Text = "Номер действующего пропуска:";
+            this.metroLabel2.Click += new System.EventHandler(this.metroLabel2_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(79, 15);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseSelectable = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(144, 19);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(79, 15);
+            this.checkBox2.TabIndex = 8;
+            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.UseSelectable = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(314, 19);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(79, 15);
+            this.checkBox3.TabIndex = 9;
+            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.UseSelectable = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(545, 19);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(79, 15);
+            this.checkBox4.TabIndex = 10;
+            this.checkBox4.Text = "checkBox4";
+            this.checkBox4.UseSelectable = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(6, 49);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(79, 15);
+            this.checkBox5.TabIndex = 11;
+            this.checkBox5.Text = "checkBox5";
+            this.checkBox5.UseSelectable = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(144, 49);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(79, 15);
+            this.checkBox6.TabIndex = 12;
+            this.checkBox6.Text = "checkBox6";
+            this.checkBox6.UseSelectable = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(314, 49);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(79, 15);
+            this.checkBox7.TabIndex = 40;
+            this.checkBox7.Text = "checkBox7";
+            this.checkBox7.UseSelectable = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(430, 150);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(177, 19);
+            this.metroLabel3.TabIndex = 40;
+            this.metroLabel3.Text = "Выданные ранее пропуска:";
+            // 
+            // metroGrid1
+            // 
+            this.metroGrid1.AllowUserToAddRows = false;
+            this.metroGrid1.AllowUserToDeleteRows = false;
+            this.metroGrid1.AllowUserToResizeRows = false;
+            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 293);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(453, 141);
-            this.dataGridView1.TabIndex = 0;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.metroGrid1.EnableHeadersVisualStyles = false;
+            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.Location = new System.Drawing.Point(430, 177);
+            this.metroGrid1.Name = "metroGrid1";
+            this.metroGrid1.ReadOnly = true;
+            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.metroGrid1.Size = new System.Drawing.Size(456, 140);
+            this.metroGrid1.TabIndex = 41;
             // 
             // Column1
             // 
@@ -97,366 +314,280 @@
             this.Column2.HeaderText = "Номер пропуска";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
+            this.Column2.Width = 150;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Дата блокирования";
+            this.Column3.HeaderText = "Дата блокировки";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 150;
             // 
-            // label1
+            // metroLabel4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 268);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Выданные ранее пропуска";
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(11, 12);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(68, 19);
+            this.metroLabel4.TabIndex = 28;
+            this.metroLabel4.Text = "Фамилия:";
             // 
-            // button1
+            // metroLabel5
             // 
-            this.button1.Location = new System.Drawing.Point(471, 351);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Заблокировать абонента";
-            this.button1.UseVisualStyleBackColor = true;
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(11, 43);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(38, 19);
+            this.metroLabel5.TabIndex = 29;
+            this.metroLabel5.Text = "Имя:";
             // 
-            // button2
+            // metroLabel6
             // 
-            this.button2.Location = new System.Drawing.Point(471, 380);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 24);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Новый пропуск";
-            this.button2.UseVisualStyleBackColor = true;
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(11, 72);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(68, 19);
+            this.metroLabel6.TabIndex = 30;
+            this.metroLabel6.Text = "Отчество:";
             // 
-            // button3
+            // metroLabel7
             // 
-            this.button3.Location = new System.Drawing.Point(471, 322);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Обновить права доступа";
-            this.button3.UseVisualStyleBackColor = true;
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.Location = new System.Drawing.Point(11, 101);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(105, 19);
+            this.metroLabel7.TabIndex = 31;
+            this.metroLabel7.Text = "Подразделение";
             // 
-            // button4
+            // metroLabel8
             // 
-            this.button4.Location = new System.Drawing.Point(471, 410);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Выход без сохранения";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(11, 137);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(136, 19);
+            this.metroLabel8.TabIndex = 32;
+            this.metroLabel8.Text = "Должность/факультет";
             // 
-            // groupBox1
+            // metroLabel9
             // 
-            this.groupBox1.Controls.Add(this.checkBox7);
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Location = new System.Drawing.Point(334, 109);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(287, 176);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Права доступа";
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.Location = new System.Drawing.Point(11, 173);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(150, 19);
+            this.metroLabel9.TabIndex = 33;
+            this.metroLabel9.Text = "Дата выдачи пропуска:";
             // 
-            // checkBox7
+            // metroLabel10
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(6, 155);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(80, 17);
-            this.checkBox7.TabIndex = 5;
-            this.checkBox7.Text = "checkBox7";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(11, 208);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(176, 19);
+            this.metroLabel10.TabIndex = 34;
+            this.metroLabel10.Text = "Общежитие (при наличии)";
             // 
-            // checkBox6
+            // tbname
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 134);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(80, 17);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
-            // checkBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(6, 111);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(80, 17);
-            this.checkBox5.TabIndex = 6;
-            this.checkBox5.Text = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
-            // checkBox4
+            this.tbname.CustomButton.Image = null;
+            this.tbname.CustomButton.Location = new System.Drawing.Point(135, 1);
+            this.tbname.CustomButton.Name = "";
+            this.tbname.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbname.CustomButton.TabIndex = 1;
+            this.tbname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbname.CustomButton.UseSelectable = true;
+            this.tbname.CustomButton.Visible = false;
+            this.tbname.Lines = new string[0];
+            this.tbname.Location = new System.Drawing.Point(197, 43);
+            this.tbname.MaxLength = 32767;
+            this.tbname.Name = "tbname";
+            this.tbname.PasswordChar = '\0';
+            this.tbname.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbname.SelectedText = "";
+            this.tbname.SelectionLength = 0;
+            this.tbname.SelectionStart = 0;
+            this.tbname.ShortcutsEnabled = true;
+            this.tbname.Size = new System.Drawing.Size(157, 23);
+            this.tbname.TabIndex = 35;
+            this.tbname.UseSelectable = true;
+            this.tbname.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbname.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 88);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            // tbsurname
             // 
-            // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 65);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.tbsurname.CustomButton.Image = null;
+            this.tbsurname.CustomButton.Location = new System.Drawing.Point(135, 1);
+            this.tbsurname.CustomButton.Name = "";
+            this.tbsurname.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbsurname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbsurname.CustomButton.TabIndex = 1;
+            this.tbsurname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbsurname.CustomButton.UseSelectable = true;
+            this.tbsurname.CustomButton.Visible = false;
+            this.tbsurname.Lines = new string[0];
+            this.tbsurname.Location = new System.Drawing.Point(197, 12);
+            this.tbsurname.MaxLength = 32767;
+            this.tbsurname.Name = "tbsurname";
+            this.tbsurname.PasswordChar = '\0';
+            this.tbsurname.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbsurname.SelectedText = "";
+            this.tbsurname.SelectionLength = 0;
+            this.tbsurname.SelectionStart = 0;
+            this.tbsurname.ShortcutsEnabled = true;
+            this.tbsurname.Size = new System.Drawing.Size(157, 23);
+            this.tbsurname.TabIndex = 36;
+            this.tbsurname.UseSelectable = true;
+            this.tbsurname.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbsurname.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // checkBox2
+            // tbmiddlename
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 42);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 13);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(291, 207);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Редактировать данные";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(147, 121);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(125, 21);
-            this.comboBox3.TabIndex = 4;
+            this.tbmiddlename.CustomButton.Image = null;
+            this.tbmiddlename.CustomButton.Location = new System.Drawing.Point(135, 1);
+            this.tbmiddlename.CustomButton.Name = "";
+            this.tbmiddlename.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tbmiddlename.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tbmiddlename.CustomButton.TabIndex = 1;
+            this.tbmiddlename.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tbmiddlename.CustomButton.UseSelectable = true;
+            this.tbmiddlename.CustomButton.Visible = false;
+            this.tbmiddlename.Lines = new string[0];
+            this.tbmiddlename.Location = new System.Drawing.Point(197, 72);
+            this.tbmiddlename.MaxLength = 32767;
+            this.tbmiddlename.Name = "tbmiddlename";
+            this.tbmiddlename.PasswordChar = '\0';
+            this.tbmiddlename.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbmiddlename.SelectedText = "";
+            this.tbmiddlename.SelectionLength = 0;
+            this.tbmiddlename.SelectionStart = 0;
+            this.tbmiddlename.ShortcutsEnabled = true;
+            this.tbmiddlename.Size = new System.Drawing.Size(157, 23);
+            this.tbmiddlename.TabIndex = 37;
+            this.tbmiddlename.UseSelectable = true;
+            this.tbmiddlename.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tbmiddlename.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(147, 96);
+            this.comboBox2.ItemHeight = 23;
+            this.comboBox2.Location = new System.Drawing.Point(197, 101);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(125, 21);
-            this.comboBox2.TabIndex = 3;
+            this.comboBox2.Size = new System.Drawing.Size(157, 29);
+            this.comboBox2.TabIndex = 38;
+            this.comboBox2.UseSelectable = true;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.ItemHeight = 23;
+            this.comboBox5.Location = new System.Drawing.Point(197, 137);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(157, 29);
+            this.comboBox5.TabIndex = 39;
+            this.comboBox5.UseSelectable = true;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 173);
+            this.comboBox1.ItemHeight = 23;
+            this.comboBox1.Location = new System.Drawing.Point(197, 208);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 21);
-            this.comboBox1.TabIndex = 6;
+            this.comboBox1.Size = new System.Drawing.Size(157, 29);
+            this.comboBox1.TabIndex = 40;
+            this.comboBox1.UseSelectable = true;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // textBox6
+            // metroDateTime2
             // 
-            this.textBox6.Location = new System.Drawing.Point(147, 16);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 20);
-            this.textBox6.TabIndex = 0;
+            this.metroDateTime2.Location = new System.Drawing.Point(197, 173);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime2.Name = "metroDateTime2";
+            this.metroDateTime2.Size = new System.Drawing.Size(157, 29);
+            this.metroDateTime2.TabIndex = 40;
             // 
-            // textBox5
+            // btadd_edit
             // 
-            this.textBox5.Location = new System.Drawing.Point(147, 43);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 20);
-            this.textBox5.TabIndex = 1;
+            this.btadd_edit.Location = new System.Drawing.Point(10, 416);
+            this.btadd_edit.Name = "btadd_edit";
+            this.btadd_edit.Size = new System.Drawing.Size(149, 23);
+            this.btadd_edit.TabIndex = 42;
+            this.btadd_edit.Text = "Добавить пользователя";
+            this.btadd_edit.UseSelectable = true;
             // 
-            // textBox4
+            // updatepermissions
             // 
-            this.textBox4.Location = new System.Drawing.Point(147, 69);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 20);
-            this.textBox4.TabIndex = 2;
+            this.updatepermissions.Location = new System.Drawing.Point(165, 416);
+            this.updatepermissions.Name = "updatepermissions";
+            this.updatepermissions.Size = new System.Drawing.Size(149, 23);
+            this.updatepermissions.TabIndex = 43;
+            this.updatepermissions.Text = "Обновить права доступа";
+            this.updatepermissions.UseSelectable = true;
             // 
-            // dateTimePicker1
+            // blocksubscriber
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(147, 147);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(125, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.blocksubscriber.Location = new System.Drawing.Point(320, 416);
+            this.blocksubscriber.Name = "blocksubscriber";
+            this.blocksubscriber.Size = new System.Drawing.Size(149, 23);
+            this.blocksubscriber.TabIndex = 44;
+            this.blocksubscriber.Text = "Заблокировать абонента";
+            this.blocksubscriber.UseSelectable = true;
             // 
-            // label8
+            // newpass
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 173);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(135, 13);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Общежитие(при наличии)";
+            this.newpass.Location = new System.Drawing.Point(475, 416);
+            this.newpass.Name = "newpass";
+            this.newpass.Size = new System.Drawing.Size(150, 23);
+            this.newpass.TabIndex = 45;
+            this.newpass.Text = "Новый пропуск";
+            this.newpass.UseSelectable = true;
             // 
-            // label7
+            // exit
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 147);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Дата выдачи пропуска";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 121);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Должность";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 13);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Подразделение";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 69);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Отчество";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 43);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Имя";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Фамилия";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(489, 79);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(125, 20);
-            this.dateTimePicker2.TabIndex = 2;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(309, 82);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(182, 13);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "Дата автоматической блокировки";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(471, 293);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Обновить данные";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(316, 32);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 13);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "Текущий пропуск";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(316, 59);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 13);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "Номер пропуска";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(413, 56);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(201, 20);
-            this.textBox7.TabIndex = 1;
-            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
+            this.exit.Location = new System.Drawing.Point(631, 416);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(149, 23);
+            this.exit.TabIndex = 46;
+            this.exit.Text = "Выход без сохранения";
+            this.exit.UseSelectable = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // OpenEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 445);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(898, 456);
+            this.Controls.Add(this.exit);
+            this.Controls.Add(this.newpass);
+            this.Controls.Add(this.blocksubscriber);
+            this.Controls.Add(this.updatepermissions);
+            this.Controls.Add(this.btadd_edit);
+            this.Controls.Add(this.metroGrid1);
+            this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.Skip_number);
+            this.Controls.Add(this.metroDateTime1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "OpenEntry";
             this.Text = "Добавление ";
             this.Load += new System.EventHandler(this.OpenEntry_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,43 +595,43 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private MetroFramework.Controls.MetroTextBox Skip_number;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroCheckBox checkBox1;
+        private MetroFramework.Controls.MetroCheckBox checkBox7;
+        private MetroFramework.Controls.MetroCheckBox checkBox6;
+        private MetroFramework.Controls.MetroCheckBox checkBox5;
+        private MetroFramework.Controls.MetroCheckBox checkBox4;
+        private MetroFramework.Controls.MetroCheckBox checkBox3;
+        private MetroFramework.Controls.MetroCheckBox checkBox2;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroGrid metroGrid1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private MetroFramework.Controls.MetroDateTime metroDateTime2;
+        private MetroFramework.Controls.MetroComboBox comboBox5;
+        private MetroFramework.Controls.MetroComboBox comboBox2;
+        private MetroFramework.Controls.MetroTextBox tbmiddlename;
+        private MetroFramework.Controls.MetroTextBox tbsurname;
+        private MetroFramework.Controls.MetroTextBox tbname;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroComboBox comboBox1;
+        private MetroFramework.Controls.MetroButton btadd_edit;
+        private MetroFramework.Controls.MetroButton updatepermissions;
+        private MetroFramework.Controls.MetroButton blocksubscriber;
+        private MetroFramework.Controls.MetroButton newpass;
+        private MetroFramework.Controls.MetroButton exit;
     }
 }
